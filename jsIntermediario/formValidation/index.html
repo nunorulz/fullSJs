@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="script.js" defer></script>
+  <title>Validação de Formulário</title>
+  <style>
+    div {
+      margin: 20px 0;
+    }
+
+    .erro {
+      color: red;
+    }
+
+    .inputError {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form id="formCadastro">
+    <div>
+      <label>
+        Nome
+        <input type="text" name="nome">
+        <span class="erro"></span>
+      </label>
+    </div>
+    <div>
+      <label>
+        Email
+        <input type="text" name="email">
+        <span class="erro"></span>
+      </label>
+    </div>
+    <div>
+      <label>
+        Cidade
+        <select name="cidade">
+          <option value="">-- Selecione --</option>
+          <option value="São Paulo">São Paulo</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="Belo Horizonte">Belo Horizonte</option>
+        </select>
+        <span class="erro"></span>
+      </label>
+      <div>
+        <button type="submit">Cadastrar</button>
+      </div>
+
+    </div>
+  </form>
+
+</body>
+
+</html>
